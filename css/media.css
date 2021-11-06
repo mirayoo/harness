@@ -1,0 +1,118 @@
+@media screen and (min-width: 641px) {
+    .col-m-1 {
+        flex: 8.33333%;
+        max-width: 8.33333%;  
+    }
+    .col-m-2 {
+        flex: 16.66667%;
+        max-width: 16.66667%;
+    }
+    .col-m-3 {
+        flex: 25%;
+        max-width: 25%;
+    }
+    .col-m-4 {
+        flex: 33.33333%;
+        max-width: 33.33333%;
+    }
+    .col-m-5 {
+        flex: 41,66667%;
+        max-width: 41,66667%;
+    }
+    .col-m-6 {
+        flex: 50%;
+        max-width: 50%;
+    }
+    .col-m-7 {
+        flex: 58.33333%;
+        max-width: 58.33333%;
+    }
+    .col-m-8 {
+       flex: 66.66667%;
+       max-width: 66.66667%; 
+    }
+    .col-m-9 {
+       flex: 75%;
+       max-width: 75%;
+    }
+    .col-m-10 {
+       flex: 83.33333%;
+       max-width: 83.33333%;
+    }
+    .col-m-11 {
+        flex: 91.66667%;
+        max-width: 91.66667%;
+    }
+    .col-m-12 {
+        flex: 100%;
+        max-width: 100%;
+    }
+
+    ul.navmenu {
+        display: flex;
+    }
+    .toggle-container {
+        display: none;
+    }
+    .card-size {
+        grid-template-columns: auto auto auto auto auto auto;
+        gap: 5px;
+        margin: auto 14px;
+    }
+}
+
+@media screen and (min-width: 961px) {
+    .col-1 {
+        flex: 8.33333%;
+        max-width: 8.33333%;  
+    }
+    .col-2 {
+        flex: 16.66667%;
+        max-width: 16.66667%;
+    }
+    .col-3 {
+        flex: 25%;
+        max-width: 25%;
+    }
+    .col-4 {
+        flex: 33.33333%;
+        max-width: 33.33333%;
+    }
+    .col-5 {
+        flex: 41,66667%;
+        max-width: 41,66667%;
+    }
+    .col-6 {
+        flex: 50%;
+        max-width: 50%;
+    }
+    .col-7 {
+        flex: 58.33333%;
+        max-width: 58.33333%;
+    }
+    .col-8 {
+       flex: 66.66667%;
+       max-width: 66.66667%; 
+    }
+    .col-9 {
+       flex: 75%;
+       max-width: 75%;
+    }
+    .col-10 {
+       flex: 83.33333%;
+       max-width: 83.33333%;
+    }
+    .col-11 {
+        flex: 91.66667%;
+        max-width: 91.66667%;
+    }
+    .col-12 {
+        flex: 100%;
+        max-width: 100%;
+    }
+
+    .card-size {
+        gap: 2px;
+        margin: auto 28px;
+    }
+}
