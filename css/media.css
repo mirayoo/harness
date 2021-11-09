@@ -1,4 +1,7 @@
 @media screen and (min-width: 641px) {
+    h2 {
+        font-size: 36px;
+      }
     h3 {
         font-size: 18px;
     }
@@ -84,7 +87,6 @@
     }
     .main a {
         padding: 20px 4px;
-        background: rgb(0 0 0 / 50%);
     }
     .swiper-slide {
         width: 240px;
@@ -93,9 +95,23 @@
     .swiper-slide-first, .swiper-slide-last {
     width: 120px!important;
     }
-    [class^='table-title-'] {
-        font-weight: 700;
-        text-align: left;
+    table {
+        padding: 30px;
+      }
+    table td, table th {
+        width: 140px;
+        font-size: 14px;
+        height: 40px;
+    }
+    table th {
+        padding-left: 20px;
+        width: 150px;
+    }
+    .navbar {
+        justify-content: center;
+    }
+    .logo img {
+        max-width: 100px;
     }
 }
 
@@ -160,6 +176,12 @@
     h1 span {
         font-size: 82px;
     }
+    .logo img {
+        max-width: 250px;
+    }
+    .navbar {
+        justify-content: space-between;
+    }
     .main p:not(:last-child) {
         font-size: 28px;
     }
@@ -170,9 +192,15 @@
     .main p span {
         font-size: 50px;
     }
-    #banner {
+    .banner {
         padding-top: 65px;
         padding-bottom: 80px;
+    }
+    .banner:before {
+        right: 370px;
+    }
+    .banner:after {
+        left: 360px;
     }
     .main a {
         font-size: 16px;
@@ -189,115 +217,37 @@
     .swiper-slide-first, .swiper-slide-last {
     width: 160px!important;
     }
-    
-    .table-title-1 {
-        grid-area: 1 / 1 / 2 / span 2;
+    .order-img::after {
+        position: absolute;
+        width: 10px;
+        height: 10px;
+        left: 0;
+        right: 0;
+        margin-left: auto;
+        margin-right: auto;
+        content: '';
+        background: #ceced3;
+        border-radius: 50%;
+        border: solid 3px #ebe7ea;
+        bottom: -42px;
+        top: auto;
     }
-    .table-title-2 {
-        grid-area: 2 / 1 / 3 / span 2;
+    .order p {
+        margin-top: 44px;
+        padding: 0;
     }
-    .table-title-3 {
-        grid-area: 3 / 1 / 4 / span 2;
+    .order .row {
+        position: relative;
     }
-    .table-title-4 {
-        grid-area: 4 / 1 / 5 / span 2;
-    }
-    .table-title-5 {
-        grid-area: 5 / 1 / 6 / span 2;
-    }
-
-    .international.size-1 {
-        grid-area: 1 / 3 / 2 / 4;
-    }
-    .international.size-2 {
-        grid-area: 1 / 4 / 2 / 5;
-    }
-    .international.size-3 {
-        grid-area: 1 / 5 / 2 / 6;
-    }
-    .international.size-4 {
-        grid-area: 1 / 6 / 2 / 7;
-    }
-    .international.size-5 {
-        grid-area: 1 / 7 / 2 / 8;
-    }
-    .international.size-6 {
-        grid-area: 1 / 8 / 2 / 9;
-    }
-
-    .russian.size-1 {
-        grid-area: 2 / 3 / 3 / 4;
-    }
-    .russian.size-2 {
-        grid-area: 2 / 4 / 3 / 5;
-    }
-    .russian.size-3 {
-        grid-area: 2 / 5 / 3 / 6;
-    }
-    .russian.size-4 {
-        grid-area: 2 / 6 / 3 / 7;
-    }
-    .russian.size-5 {
-        grid-area: 2 / 7 / 3 / 8;
-    }
-    .russian.size-6 {
-        grid-area: 2 / 8 / 3 / 9;
-    }
-
-    .hips.size-1 {
-        grid-area: 3 / 3 / 4 / 4;
-    }
-    .hips.size-2 {
-        grid-area: 3 / 4 / 4 / 5;
-    }
-    .hips.size-3 {
-        grid-area: 3 / 5 / 4 / 6;
-    }
-    .hips.size-4 {
-        grid-area: 3 / 6 / 4 / 7;
-    }
-    .hips.size-5 {
-        grid-area: 3 / 7 / 4 / 8;
-    }
-    .hips.size-6 {
-        grid-area: 3 / 8 / 4 / 9;
-    }
-
-    .waist.size-1 {
-        grid-area: 4 / 3 / 5 / 4;
-    }
-    .waist.size-2 {
-        grid-area: 4 / 4 / 5 / 5;
-    }
-    .waist.size-3 {
-        grid-area: 4 / 5 / 5 / 6;
-    }
-    .waist.size-4 {
-        grid-area: 4 / 6 / 5 / 7;
-    }
-    .waist.size-5 {
-        grid-area: 4 / 7 / 5 / 8;
-    }
-    .waist.size-6 {
-        grid-area: 4 / 8 / 5 / 9;
-    }
-
-    .chest.size-1 {
-        grid-area: 5 / 3 / 6 / 4;
-    }
-    .chest.size-2 {
-        grid-area: 5 / 4 / 6 / 5;
-    }
-    .chest.size-3 {
-        grid-area: 5 / 5 / 6 / 6;
-    }
-    .chest.size-4 {
-        grid-area: 5 / 6 / 6 / 7;
-    }
-    .chest.size-5 {
-        grid-area: 5 / 7 / 6 / 8;
-    }
-    .chest.size-6 {
-        grid-area: 5 / 8 / 6 / 9;
+    .order .row:after {
+        position: absolute;
+        content: '';
+        border: dashed 1px #ceced3;
+        width: calc(100% - 234px);
+        left: 0;
+        right: 0;
+        margin-left: auto;
+        margin-right: auto;
+        bottom: 97px;
     }
 }
