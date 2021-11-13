@@ -113,6 +113,23 @@
     .logo img {
         max-width: 100px;
     }
+
+    .popup-content {
+        width: 640px;
+        max-width: 640px;
+        height: 350px;
+    }
+    .popup-img {
+        max-height: auto;
+        overflow: visible;
+    }
+    .popup-content .popup-img img {
+        width: 320px;
+        height: auto;
+      }
+      .popup-content .col-6:last-child {
+        max-height: 350px;
+    }
 }
 
 @media screen and (min-width: 961px) {

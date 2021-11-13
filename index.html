@@ -7,6 +7,7 @@
     <!-- CSS -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
     <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/media.css">
     <title>Женские портупеи по выгодной цене | Dr. Harness</title>
@@ -171,21 +172,21 @@
             <div class="tab_item">
                     <div class="row">
                         <div class="col-m-6 col-4">
-                            <div class="card">
+                            <div class="card" id='1'>
                                 <div class="card-img">
                                     <img src="img/5959.jpg" width="300" height="350" alt="Портупея">
                                     <span>-53%</span>
                                 </div>
                                 <div class="card-content">
-                                    <h3 class="card-title">Портупея "Пеппи"</h3>
-                                    <div class="card-size">
-                                        <div class="sizeselect">xs</div>
-                                        <div class="sizeselect">s</div>
-                                        <div class="sizeselect">m</div>
-                                        <div class="sizeselect">l</div>
-                                        <div class="sizeselect inactive">xl</div>
-                                        <div class="sizeselect inactive">xxl</div>
-                                    </div>
+                                    <h3 class="card-title" data="titt">Портупея "Пеппи"</h3>
+                                    <ul class="card-size">
+                                        <li class="sizeselect" value="1">xs</li>
+                                        <li class="sizeselect"value="2">s</li>
+                                        <li class="sizeselect"value="3">m</li>
+                                        <li class="sizeselect"value="4">l</li>
+                                        <li class="sizeselect inactive"value="5">xl</li>
+                                        <li class="sizeselect inactive"value="6">xxl</li>
+                                    </ul>
                                     <div class="card-color">
                                         <div class="black"></div>
                                         <div class="red"></div>
@@ -194,7 +195,7 @@
                                         <span class="col-6 old-price">4990 р.</span>
                                         <span class="col-6 new-price">2990 р.</span>
                                     </div>
-                                    <a class="card-btn" data-popup="product-popup" href="javascript:void(0)">Заказать</a>
+                                    <a class="card-btn disabled" href="#product-btn" rel="modal:open">Заказать</a>
                                 </div>
                             </div>
                         </div>
@@ -206,14 +207,14 @@
                                 </div>
                                 <div class="card-content">
                                     <h3 class="card-title">Портупея "Влади"</h3>
-                                    <div class="card-size">
-                                        <div class="sizeselect">xs</div>
-                                        <div class="sizeselect">s</div>
-                                        <div class="sizeselect">m</div>
-                                        <div class="sizeselect">l</div>
-                                        <div class="sizeselect">xl</div>
-                                        <div class="sizeselect">xxl</div>
-                                    </div>
+                                    <ul class="card-size">
+                                        <li class="sizeselect">xs</li>
+                                        <li class="sizeselect">s</li>
+                                        <li class="sizeselect">m</li>
+                                        <li class="sizeselect">l</li>
+                                        <li class="sizeselect">xl</li>
+                                        <li class="sizeselect">xxl</li>
+                                    </ul>
                                     <div class="card-color">
                                         <div class="black"></div>
                                     </div>
@@ -221,7 +222,7 @@
                                         <span class="col-6 old-price">4990 р.</span>
                                         <span class="col-6 new-price">2990 р.</span>
                                     </div>
-                                    <a class="card-btn" data-popup="product-popup" href="javascript:void(0)">Заказать</a>
+                                    <a class="card-btn disabled" href="#product-btn" rel="modal:open">Заказать</a>
                                 </div>
                             </div>
                         </div>
@@ -233,14 +234,14 @@
                                 </div>
                                 <div class="card-content">
                                     <h3 class="card-title">Портупея "Джони Миллер"</h3>
-                                    <div class="card-size">
-                                        <div class="sizeselect">xs</div>
-                                        <div class="sizeselect">s</div>
-                                        <div class="sizeselect">m</div>
-                                        <div class="sizeselect">l</div>
-                                        <div class="sizeselect inactive">xl</div>
-                                        <div class="sizeselect inactive">xxl</div>
-                                    </div>
+                                    <ul class="card-size">
+                                        <li class="sizeselect">xs</li>
+                                        <li class="sizeselect">s</li>
+                                        <li class="sizeselect">m</li>
+                                        <li class="sizeselect">l</li>
+                                        <li class="sizeselect inactive">xl</li>
+                                        <li class="sizeselect inactive">xxl</li>
+                                    </ul>
                                     <div class="card-color">
                                         <div class="black"></div>
                                         <div class="red"></div>
@@ -249,7 +250,7 @@
                                         <span class="col-6 old-price">4990 р.</span>
                                         <span class="col-6 new-price">2990 р.</span>
                                     </div>
-                                    <a class="card-btn" data-popup="product-popup" href="javascript:void(0)">Заказать</a>
+                                    <a class="card-btn disabled" href="#product-btn" rel="modal:open">Заказать</a>
                                 </div>
                             </div>
                         </div>
@@ -261,14 +262,14 @@
                                 </div>
                                 <div class="card-content">
                                     <h3 class="card-title">Портупея "Пеппи"</h3>
-                                    <div class="card-size">
-                                        <div class="sizeselect">xs</div>
-                                        <div class="sizeselect">s</div>
-                                        <div class="sizeselect">m</div>
-                                        <div class="sizeselect">l</div>
-                                        <div class="sizeselect inactive">xl</div>
-                                        <div class="sizeselect inactive">xxl</div>
-                                    </div>
+                                    <ul class="card-size">
+                                        <li class="sizeselect">xs</li>
+                                        <li class="sizeselect">s</li>
+                                        <li class="sizeselect">m</li>
+                                        <li class="sizeselect">l</li>
+                                        <li class="sizeselect inactive">xl</li>
+                                        <li class="sizeselect inactive">xxl</li>
+                                    </ul>
                                     <div class="card-color">
                                         <div class="black"></div>
                                         <div class="red"></div>
@@ -277,7 +278,7 @@
                                         <span class="col-6 old-price">4990 р.</span>
                                         <span class="col-6 new-price">2990 р.</span>
                                     </div>
-                                    <a class="card-btn" data-popup="product-popup" href="javascript:void(0)">Заказать</a>
+                                    <a class="card-btn disabled" href="#product-btn" rel="modal:open">Заказать</a>
                                 </div>
                             </div>
                         </div>
@@ -289,14 +290,14 @@
                                 </div>
                                 <div class="card-content">
                                     <h3 class="card-title">Портупея "Влади"</h3>
-                                    <div class="card-size">
-                                        <div class="sizeselect">xs</div>
-                                        <div class="sizeselect">s</div>
-                                        <div class="sizeselect">m</div>
-                                        <div class="sizeselect">l</div>
-                                        <div class="sizeselect">xl</div>
-                                        <div class="sizeselect">xxl</div>
-                                    </div>
+                                    <ul class="card-size">
+                                        <li class="sizeselect">xs</li>
+                                        <li class="sizeselect">s</li>
+                                        <li class="sizeselect">m</li>
+                                        <li class="sizeselect">l</li>
+                                        <li class="sizeselect">xl</li>
+                                        <li class="sizeselect">xxl</li>
+                                    </ul>
                                     <div class="card-color">
                                         <div class="black"></div>
                                     </div>
@@ -304,7 +305,7 @@
                                         <span class="col-6 old-price">4990 р.</span>
                                         <span class="col-6 new-price">2990 р.</span>
                                     </div>
-                                    <a class="card-btn" data-popup="product-popup" href="javascript:void(0)">Заказать</a>
+                                    <a class="card-btn disabled" href="#product-btn" rel="modal:open">Заказать</a>
                                 </div>
                             </div>
                         </div>
@@ -316,14 +317,14 @@
                                 </div>
                                 <div class="card-content">
                                     <h3 class="card-title">Портупея "Джони Миллер"</h3>
-                                    <div class="card-size">
-                                        <div class="sizeselect">xs</div>
-                                        <div class="sizeselect">s</div>
-                                        <div class="sizeselect">m</div>
-                                        <div class="sizeselect">l</div>
-                                        <div class="sizeselect inactive">xl</div>
-                                        <div class="sizeselect inactive">xxl</div>
-                                    </div>
+                                    <ul class="card-size">
+                                        <li class="sizeselect">xs</li>
+                                        <li class="sizeselect">s</li>
+                                        <li class="sizeselect">m</li>
+                                        <li class="sizeselect">l</li>
+                                        <li class="sizeselect inactive">xl</li>
+                                        <li class="sizeselect inactive">xxl</li>
+                                    </ul>
                                     <div class="card-color">
                                         <div class="black"></div>
                                         <div class="red"></div>
@@ -332,7 +333,7 @@
                                         <span class="col-6 old-price">4990 р.</span>
                                         <span class="col-6 new-price">2990 р.</span>
                                     </div>
-                                    <a class="card-btn" data-popup="product-popup" href="javascript:void(0)">Заказать</a>
+                                    <a class="card-btn disabled" href="#product-btn" rel="modal:open">Заказать</a>
                                 </div>
                             </div>
                         </div>
@@ -348,14 +349,14 @@
                             </div>
                             <div class="card-content">
                                 <h3 class="card-title">Комплект "Ревность"</h3>
-                                <div class="card-size">
-                                    <div class="sizeselect">xs</div>
-                                    <div class="sizeselect">s</div>
-                                    <div class="sizeselect">m</div>
-                                    <div class="sizeselect">l</div>
-                                    <div class="sizeselect inactive">xl</div>
-                                    <div class="sizeselect inactive">xxl</div>
-                                </div>
+                                <ul class="card-size">
+                                    <li class="sizeselect">xs</li>
+                                    <li class="sizeselect">s</li>
+                                    <li class="sizeselect">m</li>
+                                    <li class="sizeselect">l</li>
+                                    <li class="sizeselect inactive">xl</li>
+                                    <li class="sizeselect inactive">xxl</li>
+                                </ul>
                                 <div class="card-color">
                                     <div class="black"></div>
                                     <div class="red"></div>
@@ -364,7 +365,7 @@
                                     <span class="col-6 old-price">6500 р.</span>
                                     <span class="col-6 new-price">5850 р.</span>
                                 </div>
-                                <a class="card-btn" data-popup="product-popup" href="javascript:void(0)">Заказать</a>
+                                <a class="card-btn disabled" href="#product-btn" rel="modal:open">Заказать</a>
                             </div>
                         </div>
                     </div>
@@ -376,14 +377,14 @@
                             </div>
                             <div class="card-content">
                                 <h3 class="card-title">Комплект "Janna"</h3>
-                                <div class="card-size">
-                                    <div class="sizeselect">xs</div>
-                                    <div class="sizeselect">s</div>
-                                    <div class="sizeselect">m</div>
-                                    <div class="sizeselect">l</div>
-                                    <div class="sizeselect">xl</div>
-                                    <div class="sizeselect">xxl</div>
-                                </div>
+                                <ul class="card-size">
+                                    <li class="sizeselect">xs</li>
+                                    <li class="sizeselect">s</li>
+                                    <li class="sizeselect">m</li>
+                                    <li class="sizeselect">l</li>
+                                    <li class="sizeselect">xl</li>
+                                    <li class="sizeselect">xxl</li>
+                                </ul>
                                 <div class="card-color">
                                     <div class="black"></div>
                                 </div>
@@ -391,7 +392,7 @@
                                     <span class="col-6 old-price">8800 р.</span>
                                     <span class="col-6 new-price">6950 р.</span>
                                 </div>
-                                <a class="card-btn" data-popup="product-popup" href="javascript:void(0)">Заказать</a>
+                                <a class="card-btn disabled" href="#product-btn" rel="modal:open">Заказать</a>
                             </div>
                         </div>
                     </div>
@@ -403,14 +404,14 @@
                             </div>
                             <div class="card-content">
                                 <h3 class="card-title">Комплект "Кристи"</h3>
-                                <div class="card-size">
-                                    <div class="sizeselect">xs</div>
-                                    <div class="sizeselect">s</div>
-                                    <div class="sizeselect">m</div>
-                                    <div class="sizeselect">l</div>
-                                    <div class="sizeselect inactive">xl</div>
-                                    <div class="sizeselect inactive">xxl</div>
-                                </div>
+                                <ul class="card-size">
+                                    <li class="sizeselect">xs</li>
+                                    <li class="sizeselect">s</li>
+                                    <li class="sizeselect">m</li>
+                                    <li class="sizeselect">l</li>
+                                    <li class="sizeselect inactive">xl</li>
+                                    <li class="sizeselect inactive">xxl</li>
+                                </ul>
                                 <div class="card-color">
                                     <div class="black"></div>
                                     <div class="red"></div>
@@ -419,7 +420,7 @@
                                     <span class="col-6 old-price">7300 р.</span>
                                     <span class="col-6 new-price">6570 р.</span>
                                 </div>
-                                <a class="card-btn" data-popup="product-popup" href="javascript:void(0)">Заказать</a>
+                                <a class="card-btn disabled" href="#product-btn" rel="modal:open">Заказать</a>
                             </div>
                         </div>
                     </div>
@@ -466,36 +467,39 @@
             </div>
         </div>
     </div>
-    <div id="product-popup" class="popup">
-        <div class="popup-content">
-            <div class="row">
-                <div class="col-6">
-                    <div class="popup-img">
-                        <img src="img/popup.png" alt="Фото Popup">
-                    </div>
 
-                </div>
-                <div class="col-6">
-
-                    <div class="popup-form">
-
-
-                        <form action="#">
-                            <input type="text">
-                            <input type="tel">
-                            <a class="card-btn" href="#">Оформить заказ</a>
-                        </form>
-                    </div>
-                </div>
-            </div>
+    <div id="product-btn" class="modal popup-content">
+        <div class=" row">
+          <div class="col-m-6 col-6">
+          <div class="popup-img">
+          </div>
+          </div>
+          <div class="col-m-6 col-6">
+          <div class="popup-title">
+            <h3></h3>
+          </div>
+          <div class="popup-price">
+            <span class="old-price" ></span>
+            <span class="new-price"></span>
+          </div>
+          <div class="popup-size">
+              Размер: <span></span>
+          </div>
+            
+            <input type="text" placeholder="Введите ваше имя" />
+            <input type="tel" placeholder="Введите ваш телефон" />
+            <a class="card-btn" href="">Оформить заказ</a>
+          </div>
         </div>
-    </div>
-    <footer>
+      </div>
 
+    <footer>
+        
     </footer>
 
 <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
 <script src="js/main.js"></script>
 
 </body>
